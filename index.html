@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+  <html lang="en">
+      <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial scale=1.0">
+          <title>Mashlabz|survey-form</title>
+          <link href="css/survey.css" rel="stylesheet" type="text/css">
+          <link href="https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet">
+          <link href="img/ms-icon-310x310.png" rel="shortcut icon" type="image/png">
+      </head>
+
+      <body>
+         
+         <section class="header" id="header">
+                <img class="logo" src="img/mllogo.png" alt="logo">
+
+                <!-- <div class="bg">
+                    <video class="bg__video" autoplay loop muted>
+                        <source src="img/Spacious.mp4" type="video/mp4">
+                          <source src="img/Spacious.webm" type="video/webm">
+                    </video>
+
+                </div> -->
+
+
+               <div class="intro">
+                  <h1 id="title" class="title">
+                     MASHLABZ
+                  </h1>
+                  <a href="#popup" class="btn" id="description">Take survey</a>
+                  
+
+               </div> 
+
+         </section>
+
+         <section class="popup" id="popup">
+            
+            <div class="popup__content">
+                <a href="#header" class="exit">
+                    &times;
+                </a>
+
+                <div class="form-bg">
+                   <form class="form" id="survey-form" action="" method="POST">
+                        <h1 class="form__head"> survey form</h1>
+                       <input type="text" name="name" class="form__text" id="name" required placeholder="Name"> 
+                       <label for="name" id="name-label" class="form__label">Name</label>
+
+                       <input type="email" name="email" class="form__text" id="email" required placeholder=" Email"> 
+                       <label for="email" id="label-email" class="form__label">Email</label>
+
+                       <input type="number" name="age" class="form__number" id="number" placeholder="Age" required min="16" max="65">
+                       <label for="number" id="number-label" class="form__label">Age</label>
+
+                       <select class="form__select" name="gender" id="dropdown">
+                           <option value="male">Male</option>
+                           <option value="female">Female</option>
+                           <option value="unspecified"> Rather not say</option>
+                       </select>
+                       <label for="dropdown" class="form__label">Gender</label>
+                       <br>
+
+
+
+                       <fieldset class="form__fieldset">
+                           <legend><b>What Best Decribes You?</b></legend>
+
+                           <div class="form__radio-group">
+                               <input type="radio" id="introvert" name="personality" class="form__radio">
+                               <label for="introvert" class="form__radio__label" tabindex="0">
+                                  <span class="form__radio-btn"></span>
+                                   Introvert
+                               </label><br>
+                           </div>
+
+                           <div class="form__radio-group">
+                              <input type="radio" id="extrovert" name="personality" class="form__radio">
+                              <label for="extrovert" class="form__radio__label" tabindex="0">
+                                  <span class="form__radio-btn"></span>   
+                                  Extrovert
+                              </label><br>
+                           </div>
+                           
+                           <div class="form__radio-group">
+                              <input type="radio" id="ambivert" name="personality" class="form__radio">
+                              <label for="ambivert" class="form__radio__label" tabindex="0">
+                                 <span class="form__radio-btn"></span>   
+                                 Ambivert
+                              </label><br>
+                           </div>
+                       </fieldset>
+                    
+                       <fieldset class="form__fieldset">
+
+                           <legend><b>Skill Set</b></legend>
+                           
+                           <div class="form__check-group">
+                            <input type="checkbox" id="front-end" name="skills" class="form__check" value="front-end">
+                            <label for="front-end" class="form__check__label">
+                                Front-end
+                            </label><br>
+                        </div>
+
+                           <div class="form__check-group">
+                                <input type="checkbox" id="back-end" name="skills" class="form__check" value="back-end">
+                                <label for="back-end" class="form__check__label">
+                                    Back-end
+                                </label><br>
+                            </div>
+
+                        <div class="form__check-group">
+                               <input type="checkbox" id="devops" name="skills" class="form__check" value="devops">
+                               <label for="devops" class="form__check__label">
+                                    DevOps
+                            </label><br>
+                        </div>
+
+                        <div class="form__check-group">
+                                <input type="checkbox" id="gamedev" name="skills" class="form__check" value="gamedev">
+                                <label for="gamedev" class="form__check__label">
+                                     Game Development
+                             </label><br>
+                         </div>
+        
+                         <div class="form__check-group">
+                                <input type="checkbox" id="UI/UX" name="skills" class="form__check" value="ui/ux">
+                                <label for="UI/UX" class="form__check__label">
+                                     UI/UX
+                             </label><br>
+                         </div>
+        
+                         <div class="form__check-group">
+                                <input type="checkbox" id="adobe" name="skills" class="form__check" value="adobe">
+                                <label for="adobe" class="form__check__label">
+                                     Adobe
+                             </label><br>
+                         </div>
+                       </fieldset>
+
+                       <div class="form__tadiv">
+                       <textarea class="form__textarea" id="textarea" name="textarea">Comments and suggestions</textarea>
+                       <label for="textarea" class="form__textarea__label">Comments</label>
+                       </div>
+                       <button type="submit" id="submit" class="form__submit" value="submit">Submit</button>
+                   </form>
+                </div>   
+            </div>
+         </section>
+      </body>
+  </html>
